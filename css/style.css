@@ -1,0 +1,91 @@
+    /* Whole of site */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+  /* About Section */
+.test p {
+    margin-top: 200em;
+    font-size: 32px;
+}
+
+    /* Body/Background */
+body, html {
+    background-image: url("https://live.staticflickr.com/65535/52718022136_e19939252b_z.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+    /* Header Bar */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7.2rem;
+    padding: 20px 100px;
+    background: #333438;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: all 0.2s ease-in-out;
+}
+
+    /* Header bar animation */
+header.fixedToTop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header.fixedToTop + .content{
+    margin-top:8rem;
+}
+
+    /* Header Name */
+.name {
+    font-size: 3em;
+    color: white;
+    user-select: none;
+}
+
+    /* Navigation buttons look */
+.navigation a {
+    position: relative;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500px;
+    margin-left: 40px;
+}
+
+    /* Navigation buttons pointer transition */
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .25s;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
