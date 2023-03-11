@@ -12,14 +12,21 @@ html {
 
 
   /* About Section */
-.test p {
+.About {
+    color: #E1D9D1;
+    font-size: 30px;
+    text-align: center;
     margin-top: 200em;
-    font-size: 32px;
+}
+.aboutP {
+    color: #E1D9D1;
+    font-size: 30px;
+    text-align: center;
 }
 
     /* Body/Background */
 body, html {
-    background-image: url("https://live.staticflickr.com/65535/52718022136_e19939252b_z.jpg");
+    background-image: url("https://live.staticflickr.com/65535/52739158806_efcd9b3fb7_b.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,7 +42,7 @@ header {
     width: 100%;
     height: 7.2rem;
     padding: 20px 100px;
-    background: #333438;
+    background: #454E53;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,24 +97,27 @@ header.fixedToTop + .content{
     transform: scaleX(1);
 }
 
-h1 {
+/* Under Constructon */
+.underConstruction {
+    color: #E1D9D1;
     height: 200px;
     width: 400px;
 
-    position: fixed;
-    top: 50%;
+    position: relative;
+    top: 30%;
     left: 50%;
     margin-top: -100px;
     margin-left: -200px;
     font-family: sans-serif;
 }
 
-h2 {
+.contactUs {
+    color: #E1D9D1;
     height: 200px;
     width: 400px;
 
-    position: fixed;
-    top: 55%;
+    position: relative;
+    top: 25%;
     left: 50%;
     margin-top: -100px;
     margin-left: -200px;
@@ -115,11 +125,12 @@ h2 {
 }
 
 .email {
+    color: #E1D9D1;
     height: 200px;
     width: 400px;
 
-    position: fixed;
-    top: 60%;
+    position: relative;
+    top: 20%;
     left: 50%;
     margin-top: -100px;
     margin-left: -200px;
@@ -127,13 +138,29 @@ h2 {
 }
 
 .phone {
+    color: #E1D9D1;
     height: 200px;
     width: 400px;
 
-    position: fixed;
-    top: 64%;
+    position: relative;
+    top: 12%;
     left: 50%;
     margin-top: -100px;
     margin-left: -200px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+/* Mission Statement */
+.Title {
+    color: #E1D9D1;
+    font-size: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.missionStatementP {
+    color: #E1D9D1;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
 }
